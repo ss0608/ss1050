@@ -6,16 +6,19 @@ int main(void)
 
 	for (int i = 1; i <= max; i++)
 	{
-		if (i % 13 == 0)
+		if (i % 121 == 0)
 		{
-			printf("13�̔{��=%d\n", i);
+			printf("13と17で割れる数=%d\n", i);
 		}
 		else if (i % 17 == 0)
 		{
-			printf("17�̔{��=%d\n", i);
+			printf("17で割れる数=%d\n", i);
+		}
+		else if (i % 13 == 0)
+		{
+			printf("13で割れる数=%d\n", i);
 		}
 	}
 
 	return 0;
 }
-
