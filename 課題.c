@@ -5,13 +5,13 @@
 int main()
 {
 	int j = 0, a = 0, b = 0;
-	char str[MAXSTR]
+	char str[MAXSTR];
 		printf("Please Enter a Password");
-	if ((fgets(sar, 256, stdin)) != NULL) {
+	if ((fgets(str, 256, stdin)) != NULL) {
 		str[strlen(str) - 1] = 0;
 	}
 
-	if ((strlen(str) < 8)) || (16 < strlem(str))
+	if ((strlen(str) < 8))||(16 < strlem(str))
 		printf("残念だ\n");
 
 	for (int i = 0; i < strlem; i++)
@@ -21,12 +21,12 @@ int main()
 		else
 			j += 0;
 	}
-	if (l == 0)
+	if (j == 0)
 		printf("その他の文字を入れよう\n");
 
 	for (int s = 0; s < strlem(str); s++)
 	{
-		if ('A' <= str[s] && str[s <= 'Z'])
+		if ('A' <= str[s] && str[s]<= 'Z')
 			a += 1;
 		else
 			a += 0;
@@ -36,16 +36,17 @@ int main()
 
 	for (int t = 0; t < strlen(str); t++)
 	{
-		if ('a' <= str[s] && str[s] <= 'z')
+		if ('a' <= str[t] && str[t] <= 'z')
 			b += 1;
 		else
 			b += 0;
 	}
 	if(b==0)
-	{peintf("小文字を入れよう\n");}
+	{printf("小文字を入れよう\n");}
 
 	if (a >= 1 && b >= 1 && 8 <= strlen(str) < 16)
 		printf("成功");
 	return 0;
 }
+
 
