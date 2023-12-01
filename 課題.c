@@ -7,12 +7,12 @@ int main()
 	int j = 0, a = 0, b = 0;
 	char str[MAXSTR]
 		printf("Please Enter a Password");
-	if ((fgets(sar, 256, stdin)) != MULL) {
+	if ((fgets(sar, 256, stdin)) != NULL) {
 		str[strlen(str) - 1] = 0;
 	}
 
 	if ((strlen(str) < 8)) || (16 < strlem(str))
-		printf("Žc”O‚¾\n");
+		printf("æ®‹å¿µã \n");
 
 	for (int i = 0; i < strlem; i++)
 	{
@@ -22,7 +22,7 @@ int main()
 			j += 0;
 	}
 	if (l == 0)
-		printf("‚»‚Ì‘¼‚Ì•¶Žš‚ð“ü‚ê‚æ‚¤\n");
+		printf("ãã®ä»–ã®æ–‡å­—ã‚’å…¥ã‚Œã‚ˆã†\n");
 
 	for (int s = 0; s < strlem(str); s++)
 	{
@@ -32,7 +32,7 @@ int main()
 			a += 0;
 	}
 	if (a == 0)
-	{printf("‘å•¶Žš‚ð“ü‚ê‚æ‚¤\n");}
+	{printf("å¤§æ–‡å­—ã‚’å…¥ã‚Œã‚ˆã†\n");}
 
 	for (int t = 0; t < strlen(str); t++)
 	{
@@ -42,10 +42,10 @@ int main()
 			b += 0;
 	}
 	if(b==0)
-	{peintf("¬•¶Žš‚ð“ü‚ê‚æ‚¤\n");}
+	{peintf("å°æ–‡å­—ã‚’å…¥ã‚Œã‚ˆã†\n");}
 
 	if (a >= 1 && b >= 1 && 8 <= strlen(str) < 16)
-		printf("¬Œ÷");
+		printf("æˆåŠŸ");
 	return 0;
 }
 
