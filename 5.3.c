@@ -7,6 +7,6 @@ int powint(int x, int p)
 		y *= x;
 	}
 
-	return 0;
+	return y;
 
 }
