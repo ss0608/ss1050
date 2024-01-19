@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<math.h>
+void niji(double a,double b,double c)
+{
+    double x1,x2,x3,y1,y2,D;
+    D=b*b-(4.0)*a*c;
+
+    if(D>0)
+    {
+        printf("2つの異なる実数解\n");
+        x1=(-b+sqrt(-D))/(2.0*a);
+        x2=(-b-sqrt(-D))/(2.0*a);
+        printf("x= %f , %f \n",x1,x2);
+    }
+    else if(D==0)
+    {
+        printf("重解\n");
+        x3=(-b)/(2.0*a);
+        printf("x= %f \n",x3);
+    }
+    else
+    {
+        printf("2つの異なる虚数解\n");
+        x3=(-b)/(2.0*a);
+        y1=sqrt(D)/(2.0*a);
+        y2=-sqrt(D)/(2.0*a);
+        printf("x= %f + i %f, %f - i %f\n",x3,y1,x3,y2);
+    }
+    return;
+}
+int main(void)
+{
+    double a,b,c;
+
+    printf("ax^2+bx+c=0の式のabcを入力せよ\n");
+    while(scanf("%f %f %f",&a,&b,&c))
+    {
+        if((a==0) && (b==0) && ( c == 0 )&&(a < b) && ( b < c ))
+       {
+            break;
+        }
+        else if((a==0) && (b==0) && (c!=0)&&(a < b) && ( b < c ))
+        {
+            printf("不能\n");
+        }
+        else if((a==0)&&(b!=0))
+        {
+            printf("1次方程式になる\n");
+        }
+        else niji(a,b,c);
+    }
+
+    return 0;
+}
